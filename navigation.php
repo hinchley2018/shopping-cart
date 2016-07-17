@@ -31,7 +31,7 @@
                         $query = "SELECT count(*) FROM cart_items WHERE user=1";
 
                         // prepare query statement
-                        $stmt = $con->prepare( $query );
+                        $stmt = $db->prepare( $query );
 
                         // execute query
                         $stmt->execute();
